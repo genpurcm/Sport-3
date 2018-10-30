@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">-->
+    <!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>&ndash;&gt;-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>-->
+    <!--&lt;!&ndash;<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>&ndash;&gt;-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<!--<style>-->
+    <!--.dropdown:hover>.dropdown-menu{-->
+        <!--display:block;-->
+        <!--}-->
+<!--</style>-->
+<div class="container">
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+
+</div>
+<!--<script type="text/javascript">-->
+    <!--<script>-->
+        <!--$(document).ready(function() {-->
+      <!--// executes when HTML-Document is loaded and DOM is ready-->
+
+      <!--// There is a little gap below the button so if you didn't have the timeout function delay it would remove the open class before you actually stop hovering the component.-->
+
+      <!--//sets timer variable-->
+      <!--var timer;-->
+
+      <!--// when the button and button menu are hovered-->
+      <!--$('.dropdown button, .dropdown-menu').hover(function() {-->
+
+        <!--// Clears the time on hover to prevent a que or waiting for the delay to finish from a previous hover event-->
+        <!--clearTimeout(timer);-->
+        <!--// Add the class .open and show the menu-->
+        <!--$('.dropdown').addClass('open');-->
+
+      <!--}, function() {-->
+
+        <!--// Sets the timer variable to run the timeout delay-->
+        <!--timer = setTimeout(function() {-->
+          <!--// remove the class .open and hide the submenu-->
+          <!--$('.dropdown').removeClass("open");-->
+        <!--}, 500);-->
+
+      <!--});-->
+
+      <!--// document ready-->
+    <!--});-->
+
+    <!--</script>-->
+<script src="js/hoverButton.js"></script>
+</body>
+
+</html>

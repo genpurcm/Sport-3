@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basketball Tournament</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <style>
+          body {
+              position: relative;
+          }
+          .affix {
+              top: 20px;
+              z-index: 9999 !important;
+          }
+          div.col-sm-9 div {
+              height: 250px;
+              font-size: 28px;
+          }
+          #section1 {color: #fff; background-color: #1E88E5;}
+          #section2 {color: #fff; background-color: #673ab7;}
+          #section3 {color: #fff; background-color: #ff9800;}
+          #section41 {color: #fff; background-color: #00bcd4;}
+          #section42 {color: #fff; background-color: #009688;}
+
+          @media screen and (max-width: 810px) {
+            #section1, #section2, #section3, #section41, #section42  {
+                margin-left: 150px;
+            }
+          }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+<div class="container-fluid" style="background-color:#2196F3;color:#fff;height:200px;">
+    <h1>Torneos</h1>
+    <h3>Fixed vertical sidenav on scroll</h3>
+    <p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+    <!--<p>The left menu sticks the page after you have scrolled a specified amount of pixels, and the links in the menu are automatically updated based on scroll position.</p>-->
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <li>
+                        <div class="dropdown">
+                            <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporada 2018<span class="caret"></span></a>-->
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Temporada 2018
+                                <!--<span class="caret"></span>-->
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#section41">Super Liga Apertura 'A'</a></li>
+                                <li><a class="dropdown-item" href="#section42">Super Liga Apertura 'B'</a></li>
+                                <li><a class="dropdown-item" href="#section42">L.B.A 'A'</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="btn-group">
+                        <li>
+                            <ul class="dropdown">
+                                <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporada 2017<span class="caret"></span></a>-->
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Temporada 2017
+                                    <!--<span class="caret"></span>-->
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#section41">Super Liga Apertura 'A'</a></li>
+                                    <li><a class="dropdown-item" href="#section42">Super Liga Apertura 'B'</a></li>
+                                    <li><a class="dropdown-item" href="#section42">L.B.A 'A'</a></li>
+                                    <li><a class="dropdown-item" href="#section42">L.B.A 'B'</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </div>
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenuButton3" aria-haspopup="true" aria-expanded="false">-->
+                        <!--Temporada 2017-->
+                        <!--&lt;!&ndash;<span class="caret"></span>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">-->
+                        <!--<li><a href="#section41">Super Liga Apertura 'A'</a></li>-->
+                        <!--<li><a href="#section42">Super Liga Apertura 'B'</a></li>-->
+                        <!--<li><a href="#section42">L.B.A 'A'</a></li>-->
+                        <!--<li><a href="#section42">L.B.A 'B'</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                        <!--<li><a href="#section2016">Temporada 2016</a></li>-->
+                        <!--<li><a href="#section1">Temporada 2015</a></li>-->
+                        <!--<li><a href="#section2">Temporada 2014</a></li>-->
+                        <!--<li><a href="#section3">Temporada 2013</a></li>-->
+                </div>
+            </ul>
+        </nav>
+        <div class="col-sm-9">
+            <div id="section2018">
+                <h1>Section 2018</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section2017">
+                <h1>Section 2017</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section2016">
+                <h1>Section 2017</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section41">
+                <h1>Section 4-1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section42">
+                <h1>Section 4-2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/hoverButton.js"></script>
+</body>
+</html>
