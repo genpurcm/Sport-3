@@ -3,7 +3,7 @@ function myInnerHTML() {
     var p = location.port;
     document.getElementById("InnerHTML-text").innerHTML= location.protocol + "//" + x + ":" + p + location.pathname + location.search;
     document.getElementById("hidden").innerHTML="HIDDEN ONLY ON Micro-Small";
-    document.getElementById("hidden").style.color=orange;
+    document.getElementById("hidden").style.color="orange";
 };
 
 
@@ -43,7 +43,7 @@ function Ajax() {
             window.open("/excelreader", "_blank");
             console.log("Ajax Button");
             alert("Ajax Button Alert");
-            System.out.println("result");
+            //System.out.println("result");
         },
     });
 };
@@ -67,7 +67,7 @@ $('#Ajax2').on("click", function(){
                 System.out.println("Ajax2 button result");
             } else {
                 alert("Ajax2 Button Alert FALSE");
-                window.open("/excelreaderA");
+                window.open("/excelreaderError");
                 var result = result.success;
                 $("#Ajax2P").html("<p id='error' style='color:blue'>"+"result"+"</p>");
             };
@@ -138,7 +138,7 @@ $(document).ready(function() {
       window.open("/excelreader", "_blank");
       console.log("JQuery Button");
       alert("Jquery Button Alert");
-      System.out.println("Ejecutando JQuery Button");
+//      System.out.println("Ejecutando JQuery Button");
   });
 });
 
@@ -162,7 +162,7 @@ function JS4() {
 
 function DocumentWriter() {
     var myWindow = window.open("", "myWindow", "width=200,height=100");
-    myWindow.document.write("<p style='color:yellow'>This is" + 'myWindow' + "</p>");
+    myWindow.document.write("<p style='color:yellow'>This is " + 'myWindow' + "</p>");
 //    myWindow.opener.document.write("<p id='DocWriter' style='color:green'>This is the source window!</p>");
     myWindow.opener.document.getElementById("DocWriter").innerHTML="HIDDEN ONLY ON Micro-Small DocumentWriter";
 };
