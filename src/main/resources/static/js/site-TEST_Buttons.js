@@ -162,7 +162,7 @@ function JS4() {
 
 function DocumentWriter() {
     var myWindow = window.open("", "myWindow", "width=200,height=100");
-    myWindow.document.write("<p style="color:yellow">This is 'myWindow'</p>");
+    myWindow.document.write("<p style='color:yellow'>This is" + 'myWindow' + "</p>");
 //    myWindow.opener.document.write("<p id='DocWriter' style='color:green'>This is the source window!</p>");
     myWindow.opener.document.getElementById("DocWriter").innerHTML="HIDDEN ONLY ON Micro-Small DocumentWriter";
 };
